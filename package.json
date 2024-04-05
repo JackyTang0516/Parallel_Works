@@ -1,0 +1,14 @@
+{
+    "name": "rest-api-server",
+    "version": "1.0.0",
+    "description": "Parallel Works Software Engineering Test",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "keywords": [],
+    "author": "Jacky Tang",
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}
