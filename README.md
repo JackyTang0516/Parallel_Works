@@ -47,15 +47,16 @@ cd ..
 ```
 npm start
 ```
-- The server will be running at http://localhost:3000.
+- The server will be running at http://localhost:3000
+- The Mongodb will be running at mongodb:localhost:27017 or mongodb:0.0.0.0:27018
 
-## Usage
+## Usage:
 
 - Retrieve Data: Send a GET request to /api/users to retrieve all users.
 
-- Save Data: Send a POST request to /api/users with a JSON payload to save a new user. 
+- Save Data: Send a POST request to /api/users with a JSON payload to save a new user.
 
-## Stopping the Project
+## Stopping the Project:
 
 ### 1. Stop the Express.js Server:
 - Press Ctrl + C in the terminal where the server is running.
@@ -68,3 +69,30 @@ cd terraform
 ```
 terraform destroy
 ```
+
+## Postman Testing:
+### 1. POST/users
+- http://localhost:3000/api/users
+- {
+  "username": "user123",
+  "password": "password123"
+  }
+### 2. GET/users
+- http://localhost:3000/api/users
+### 3. GET/status
+- http://localhost:3000/api/status
+
+## Helpful commands:
+
+```
+lsof -iTCP -sTCP:LISTEN -n -P | grep <port_number>
+```
+```
+docker run --name my-mongo -d -p <internal_port>: <external_port> mongo:latest
+```
+```
+docker pull mongo:latest
+```
+
+
+
