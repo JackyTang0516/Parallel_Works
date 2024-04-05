@@ -11,6 +11,7 @@ const startMongoDB = () => {
         console.error(`exec error: ${error}`);
         reject(error);
       } else {
+        console.log('MongoDB container started successfully');
         resolve(stdout);
       }
     });
