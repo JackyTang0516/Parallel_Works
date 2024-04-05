@@ -54,7 +54,7 @@ npm start
 
 - Retrieve Data: Send a GET request to /api/users to retrieve all users.
 
-- Save Data: Send a POST request to /api/users with a JSON payload to save a new user.
+- Save Data: Send a POST request to /api/users with a JSON payload to save a new user. The data is stored on the host machine at /Users/jackytang/mongo-data, which ensures that the data persists even if the container is stopped or removed.
 
 ## Stopping the Project:
 
