@@ -1,6 +1,4 @@
-# Parallel_Works
-[Parallel Works Software Engineering Test](https://parallelworks.notion.site/Parallel-Works-Software-Engineering-Test-5ad6e8e4597746ccb3dee1ebe7b5ebf3)
-
+# Node.js REST API Server
 This project is a REST API server built with Express.js that allows users to interact with a MongoDB database. The MongoDB database runs in a Docker container, and Terraform is used to manage the container. The server supports GET and POST requests to retrieve and save data.
 
 ## Prerequisites
